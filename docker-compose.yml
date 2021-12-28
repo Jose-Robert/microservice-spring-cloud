@@ -1,0 +1,22 @@
+version: '3' 
+services:
+  postgres:
+     container_name: hr-worker-pg12
+     image: postgres:12-alpine
+     environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: "1234567"
+     ports:
+        - 5432:5432
+  pgadmin:
+     container_name: pgadmin
+     image: dpage/pgadmin4:6.3
+     environment:
+        PGADMIN_DEFAULT_EMAIL: "postgres@admin.com.br"
+        PGADMIN_DEFAULT_PASSWORD: "admin"
+     ports:
+         - "4001:80"
+networks:
+   default:
+      external: true
+      name: hr-net
