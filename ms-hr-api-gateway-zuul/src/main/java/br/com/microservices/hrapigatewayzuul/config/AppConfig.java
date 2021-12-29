@@ -1,4 +1,4 @@
-package br.com.microservices.hrapigatewayzull.config;
+package br.com.microservices.hrapigatewayzuul.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

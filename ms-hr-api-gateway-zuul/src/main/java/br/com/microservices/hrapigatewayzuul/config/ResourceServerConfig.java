@@ -1,4 +1,4 @@
-package br.com.microservices.hrapigatewayzull.config;
+package br.com.microservices.hrapigatewayzuul.config;
 
 import java.util.List;
 

@@ -2,10 +2,10 @@ spring:
   application:
     name: hr-worker
   profiles:
-    active: test
+    active: prod
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://hr-config-server:8888
       label: main
 server:
   port: ${PORT:0}

@@ -1,12 +1,4 @@
 spring:
-  datasource:
-    username: sa
-    url: jdbc:h2:mem:testdb
-    password: ''
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
   application:
     name: hr-user
 server:
@@ -15,6 +7,6 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://hr-eureka-server:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
