@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.microservices.hrapigatewayzull</groupId>
-	<artifactId>ms-hr-api-gateway-zull</artifactId>
+	<artifactId>ms-hr-api-gateway-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-hr-api-gateway-zull</name>
-	<description>Gateway Zull Server</description>
+	<name>ms-hr-api-gateway-zuul</name>
+	<description>Gateway Zuul Server</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
@@ -68,7 +68,7 @@
 	</dependencyManagement>
 
 	<build>
-	<finalName>hr-api-gateway-zull</finalName>
+	<finalName>hr-api-gateway-zuul</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
